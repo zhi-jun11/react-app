@@ -1,0 +1,102 @@
+/* MyCalculator 整體外觀 */
+.my-calculator-container {
+  max-width: 360px;
+  margin: 48px auto;
+  border: none;
+  border-radius: 24px;
+  padding: 28px 20px 24px 20px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  box-shadow: 0 8px 32px 0 #0006, 0 1.5px 6px #0002;
+}
+
+/* MyDisplay 外觀 */
+.my-calculator-display {
+  background: #18191a;
+  color: #e0e0e0;
+  border-radius: 12px;
+  padding: 20px 14px 12px 14px;
+  min-height: 56px;
+  margin-bottom: 18px;
+  text-align: right;
+  font-size: 2em;
+  word-break: break-all;
+  box-shadow: 0 2px 8px #0003;
+}
+.my-calculator-display .expression {
+  opacity: 0.6;
+  font-size: 1.1em;
+  color: #b0b0b0;
+}
+.my-calculator-display .result {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* MyKeypad 外觀 */
+.my-calculator-keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-calculator-keypad-row {
+  display: flex;
+}
+
+/* MyButton 外觀 */
+.my-calculator-btn {
+  width: 68px;
+  height: 68px;
+  margin: 6px;
+  font-size: 1.3em;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  background: #232526;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px #0002;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  outline: none;
+}
+.my-calculator-btn:hover,
+.my-calculator-btn:focus {
+  background: #393b3f;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px #0003;
+}
+.my-calculator-btn.number {
+  background: #2d2f31;
+  color: #90caf9;
+}
+.my-calculator-btn.number:hover {
+  background: #1976d2;
+  color: #fff;
+}
+.my-calculator-btn.operator {
+  background: #ff9800;
+  color: #fff;
+}
+.my-calculator-btn.operator:hover {
+  background: #ffa726;
+  color: #232526;
+}
+.my-calculator-btn.control {
+  background: #607d8b;
+  color: #fff;
+}
+.my-calculator-btn.control:hover {
+  background: #90a4ae;
+  color: #232526;
+}
+
+/* MyErrorMessage 外觀 */
+.my-calculator-error {
+  color: #ff5252;
+  margin-top: 10px;
+  min-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
